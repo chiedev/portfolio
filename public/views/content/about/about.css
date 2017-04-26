@@ -1,0 +1,196 @@
+/*CUSTOM*/
+.profile-pic{
+	border: solid thin #333;
+	width: calc(100% - 40%);
+	height: auto;
+	margin: 10% 20%;
+	/*background: #333;*/
+}
+.profile-pic img{
+	width: 100%;
+	height: auto;
+}
+.custom-header{
+	margin-top: 51px;
+	box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+}
+.header-background{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-image: url('https://image.freepik.com/free-vector/floral-pattern-design_1182-14.jpg');
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+/*	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);*/
+}
+.header-background-2{
+	position: fixed;
+	height: calc(100% + 50px);
+	width: 200%;
+    opacity: .75;
+	background: white; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(diagonally, #7CC4FF, violet); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(diagonally, #7CC4FF, violet); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(diagonally, #7CC4FF, violet); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #7CC4FF, violet); /* Standard syntax */
+}
+.custom-header-pp{
+	position: relative;
+	padding: 20px;
+}
+.custom-header-pp .profile-pic{
+	margin: 0 auto;
+	background-color: #FAFAFA;
+	padding: 5px;
+	border: solid thin #999;
+	box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+	width: 250px;
+	/*margin-top: -10%;*/
+}
+.custom-header-pp .profile-pic img{
+	border: solid thin #CCC;
+}
+.custom-header-body{
+	position: relative;
+}
+.custom-header-container{
+	margin: 20px auto;
+	/*background-color: #FFFFFF;*/
+	color: #000000;
+	opacity: .75;
+	padding: 20px 40px !important;
+	max-width: 700px;
+}
+.custom-left-panel{
+	background: #222;
+	margin-top: 5%;
+}
+.custom-wc-img{
+	position: relative;
+	width: 100%;
+	height: 250px;
+	overflow: hidden;
+	background-color: #000;
+}
+.custom-wc-img img{
+	opacity: .75;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+.custom-wc-img img:hover{
+	opacity: 1;
+	cursor: pointer;
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+.card img{
+	position: absolute;
+	width: 100%;
+}
+.beauty{
+	text-align: center;
+	font-family: 'Rancho', cursive;
+}
+.code{
+	text-align: center;
+	font: 13px Courier New,Courier,monospace;
+}
+.big{
+	font-size: 100px;
+	line-height: 250px;
+}
+.medium{
+	font-size: 50px;
+	line-height: 50px;
+}
+.information{
+	/*position: fixed;*/
+	height: 100%;
+	width: 100%;
+	top: 0;
+}
+.skills{
+	position: relative;
+	background: #FFF;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	/*margin-top: 500px;*/
+}
+/*END-OF-CUSTOM*/
+
+
+/*MEDIA BREAKPOINTS*/
+@media (min-width: 544px){
+	.custom-left-panel{
+		background: none;
+		margin-top: 20%;
+	}
+	.profile-pic{
+		width: calc(100% - 40%);
+		margin: 10% 20%;
+	}
+	.custom-title{
+		font-size: 16px;
+	}
+	.custom-wc-img{
+		height: 400px;
+	}
+}
+@media (min-width: 768px){
+	.custom-left-panel{
+		background: none;
+		margin-top: 20%;
+	}
+	.profile-pic{
+		width: calc(100% - 40%);
+		margin: 10% 20%;
+	}
+	.custom-wc-img{
+		height: 150px;
+	}
+	.big{
+		font-size: 150px;
+		line-height: 300px;
+	}
+	.medium{
+		font-size: 75px;
+		line-height: 100px;
+	}
+}
+@media (min-width: 992px){
+	.custom-left-panel{
+		background: #222;
+		margin-top: 8%;
+	}
+	.profile-pic{
+		width: calc(100% - 50%);
+		margin: 10% 25%;
+	}
+	.custom-title{
+		font-size: 20px;
+	}
+	.custom-wc-img{
+		height: 180px;
+	}
+}
+@media (min-width: 1200px){
+	.custom-left-panel{
+		background: #222;
+		margin-top: 5%;
+	}
+	.profile-pic{
+		border: solid thin #333;
+		width: calc(100% - 40%);
+		height: auto;
+		margin: 10% 20%;
+	}
+	.custom-title{
+		font-size: 24px;
+	}
+	.custom-wc-img{
+		height: 250px;
+	}
+}
+/*END OF MEDIA BREAKPOINTS*/

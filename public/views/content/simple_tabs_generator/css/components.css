@@ -1,0 +1,49 @@
+/*switch*/
+.switch *{
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    transition: .2s;
+}
+.switch > input[type="checkbox"] {
+    display:none;
+}
+.switch > span{
+    position: relative;
+    display:inline-block;
+    padding: 1px;
+    width:calc(36px - 2px);
+    height:calc(18px - 2px);
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:#444;
+    background-size: 100%;
+    cursor:pointer;
+    border-radius: 10px;
+    border:solid .5px #555;
+}
+.switch[checked] > span{
+    margin:-1px 4px 0 0;
+    background: #13C100;
+    border:solid .5px #19A309;
+}
+.switch > span nav{
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background-color: #FFF;
+    box-shadow: 1.5px 0px 2px #111;
+}
+.switch[checked] > span nav{
+    position: absolute;
+    right: .4px;
+    box-shadow: -1.5px 0px 2px #555;
+}
+
+/*labels*/
+label[for=switch] {
+    color: #222;
+    text-transform: uppercase;
+}
+label[for=switch]:after{
+    content: ' '
+}
