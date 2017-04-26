@@ -51,7 +51,7 @@ function checkPage(){
 function reqPage(req,target){
 	// change subpage view
 	req = (req == '/' || req == '/index')?'/about':req
-	page = 'portfolio/public/views/content'+target+'/index.html'
+	page = 'public/views/content'+target+'/index.html'
 	if (req == 'iframe'){
 		$('.main-page[custom-link-source="footer"]').css({'display':'none'})
 		subPage.html('<iframe src="'+target+'"></iframe>')
