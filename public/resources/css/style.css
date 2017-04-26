@@ -16,6 +16,11 @@ body {
 .custom-footer .container {
   margin: 20px auto;
 }
+.navbar{
+	background: #222;
+	z-index: 9999999999999;
+	border: transparent;
+}
 .navbar-brand{
 	padding: 5px;
 }
