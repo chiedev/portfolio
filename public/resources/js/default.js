@@ -7,7 +7,7 @@ $(document).ready(function(e){
 		checkPage()
 	})
 	$('.main-page','body').each(function(){
-		var page = 'portfolio/public/views/'
+		var page = 'public/views/'
 		 + $(this).attr('custom-link-source') + '/'
 		 + $(this).attr('custom-link-source') + '.'
 		 + $(this).attr('custom-file-type')
@@ -35,7 +35,7 @@ function checkPage(){
 	if (pageRequest == '/simple_chord_generator' 
 		|| pageRequest == '/simple_tabs_generator'
 		|| pageRequest == '/any-haw_litson_manok'){
-		reqPage('iframe','portfolio/public/views/content'+pageRequest+'/index.html')
+		reqPage('iframe','public/views/content'+pageRequest+'/index.html')
 	}else if (window.location.href == getBaseUrl()){
 		reqPage('default','/about')
 	}
