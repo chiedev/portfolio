@@ -1,0 +1,41 @@
+/*
+ * Author: Raycille Dimla
+ * Author URI: https://www.linkedin.com/in/raycille-dimla/
+ *
+ * Table Of Contents
+ * # transition
+ */
+
+ @mixin transition( $speed ) {
+  -webkit-transition: $speed;
+  -moz-transition: $speed;
+  -o-transition: $speed;
+  transition: $speed;
+}
+@mixin font-style( $fontface ) {
+  @if ( $fontface == 'Rancho' ) {
+    font-size: 24px;
+    color: $secondary_color;
+    font-family: 'Rancho', cursive;
+    text-transform: capitalize;
+  }
+}
+@mixin link-color($req, $color) {
+  @if ($req == 'default') {
+    a {
+      color: $color;
+      &:visited,
+      &:focus,
+      &:active {
+        color: $color;
+      }
+    }
+  }
+  @else if ($req == 'hover') {
+    a {
+      &:hover {
+        color: $color;
+      }
+    }
+  }
+}
