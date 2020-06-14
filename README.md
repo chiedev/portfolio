@@ -1,7 +1,7 @@
 # Portfolio
 
 <p align="center">
-<a href="http://chiedev.github.com/portfolio"><img src="assets/images/Raycille Portfolio Logo.jpg" title="Chie's Portfolio" alt="Chie's Portfolio"></a>
+<a href="http://chiedev.github.com/portfolio"><img src="http://chiedev.github.com/portfolio/assets/images/Raycille Portfolio Logo.jpg" title="Chie's Portfolio" alt="Chie's Portfolio"></a>
 </p>
 <p align="center">
 This is my latest web developer portfolio. 
