@@ -23,9 +23,9 @@
     $white_translucent: rgba(255,255,255,.7);
     $white_translucent_2: rgba(255,255,255,.5);
     $black_translucent: rgba(0,0,0,.7);
-    $theme_color: #036BB1;
+    $theme_color: #75E8FF;
     $theme_color_lighter: lighten($theme_color, 10%);
-    $theme_color_translucent: rgba(3,107,177,.7);
+    $theme_color_translucent: rgb(117, 232, 255, 0.7);
     $black: #222;
     $dirty_white: #F4F4F4;
     $gray: #DDD;
@@ -532,6 +532,7 @@ a.button-9 {
     display: inline-block;
     height: 50px;
     width: 50px;
+    text-align: center;
     @include transitions(
         $req                : 'top-bottom',
         $border-color       : $theme_color,

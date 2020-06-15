@@ -7,57 +7,28 @@
         <span class="navbar-toggler-icon"><i class="fas fa-ellipsis-v"></i></span>
       </button>
 
-      <div class="navbar-collapse collapse" id="navbarPrimary" style="">
+      <div class="navbar-collapse collapse" id="navbarPrimary">
         <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a href="/timeline" class="nav-link" (click)="setTitle( '' )" routerLinkActive="active">Timeline</a>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Playground</a>
             <div class="dropdown-menu" aria-labelledby="menuDropdown">
-              <!-- <span class="dropdown-header">Virtual Intrument</span>
-              <a class="dropdown-item" href="#">String (Guitar & Ukulele)</a>
-              <div class="dropdown-divider"></div> -->
-              <span class="dropdown-header">Generators</span>
+              <span class="dropdown-header">Prototypes</span>
               <a class="dropdown-item" (click)="setTitle( 'Scale Generator' )" routerLink="/scale-generator" routerLinkActive="active">Scale Generator</a>
               <a class="dropdown-item" (click)="setTitle( 'Tabs Generator' )" routerLink="/tabs-generator" routerLinkActive="active">Tabs Generator</a>
               <a class="dropdown-item" (click)="setTitle( 'Chord Diagram Generator' )" routerLink="/chord-diagram-generator" routerLinkActive="active">Chord Diagram Generator</a>
-              <div class="dropdown-divider"></div>
-              <span class="dropdown-header">Others</span>
-              <a class="dropdown-item" (click)="setTitle( 'Playground' )" routerLink="/playground" routerLinkActive="active">Elements</a>
             </div>
-          </li>
-          <li class="nav-item">
-            <a href="/timeline" class="nav-link" (click)="setTitle( '' )" routerLinkActive="active">Timeline</a>
           </li>
         </ul>
         <ul class="social-media">
           <li><a href="https://www.linkedin.com/in/raycille-dimla/" title="linkedin"><i class="fab fa-linkedin"></i></a></li>
-          <li><a href="https://www.facebook.com/raycilledimla/" title="facebook"><i class="fab fa-facebook-square"></i></a></li>
           <li><a href="https://github.com/chiedev/" title="github"><i class="fab fa-github-square"></i></a></li>
           <li><a href="https://codepen.io/chiedevdimla/" title="codepen"><i class="fab fa-codepen"></i></a></li>
         </ul>
       </div>
     </div>
-  <!-- </nav>
-  <nav class="navbar navbar-inverse fixed-top">
-    <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPrimaryMenu" aria-controls="navbarPrimaryMenu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarPrimaryMenu">
-          <ul class="navbar-nav menu">
-            <li class="nav-item active"><a href="/">Home</a></li>
-            <li class="nav-item"><a href="/timeline">Timeline</a></li>
-            <li class="nav-item"><a href="/playground">Playground</a></li>
-          </ul>
-        </div>
-      <div class="navbar-right">
-        <ul class="social-media">
-          <li><a href="https://www.linkedin.com/in/raycille-dimla/"><i class="fab fa-linkedin"></i></a></li>
-          <li><a href="https://www.facebook.com/raycilledimla/"><i class="fab fa-facebook-square"></i></a></li>
-          <li><a href="https://github.com/chiedev/"><i class="fab fa-github-square"></i></a></li>
-          <li><a href="https://codepen.io/chiedevdimla/"><i class="fab fa-codepen"></i></a></li>
-        </ul>
-      </div>
-    </div> -->
   </nav><!-- end of navigation -->
 </header>
 
@@ -68,18 +39,18 @@
   </div>
 
   <router-outlet></router-outlet>
-  <!-- <app-main-frame></app-main-frame> -->
 </div><!-- end of #main-content -->
 
 <footer id="main-footer" class="container-fluid">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 col-md-4 left">
-        <p>Copyright &copy; 2018 | Portfolio version 1.8.2</p>
+      <div class="col-sm-12 col-md-5 left">
+        <p>Portfolio version 1.9.6 | All Rights Reserved. | 2020 © | Powered by Angular
+          <br>Free website quotation? You may send a message at <a href="mailto:developer@chiedimla.com" target="__blank">developer@chiedimla.com</a></p>
       </div>
-      <div class="col-sm-12 col-md-8 right">
+      <div class="col-sm-12 col-md-7 right">
         <p>“Others inspire us, information feeds us, practice improves our performance, but we need quiet time to figure things out, to emerge with new discoveries, to unearth original answers.”
-          <br> ~ Ester Bucholz</p>
+          ~ Ester Bucholz</p>
       </div>
     </div>
   </div>

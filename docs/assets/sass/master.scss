@@ -11,6 +11,7 @@
   -------------------------------*/
   @import "base/style";
   @import "base/theme";
+  @import "utilities/font-awesome-4.7.0/css/font-awesome.min.css";
 
 
 
@@ -57,6 +58,8 @@
      # Fonts
     -------------------------------*/
     @import url('../fonts/googleFonts/KalamPacificoRancho.css');
+    @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
    /* -------------------------------
      # Mixins
@@ -69,22 +72,48 @@
   body {
       background-color: #000;
       font-size: 0;
+      // font-family: 'Varela Round', sans-serif;
+      font-family: 'Nunito', sans-serif;
+      font-size: 1em;
   }
-  body > * {
-      font-size: 14px;
+  /* Small Devices, Tablets */
+  @media only screen and (max-width : 768px) {
+    body {
+        font-size: 100%;
+    }
+  }
+  .parallax-container .parallax > img {
+    -webkit-transform: translate3d(-50%, 1029.36px, 0);
+          transform: translate3d(-50%, 1029.36px, 0);
+  -webkit-transform: translateX(-50%, 1029.36px, 0);
+          transform: translateX(-50%, 1029.36px, 0);
+    opacity: 1 !important;
   }
   pre {
     background-color: rgba(0,0,0,.5);
     color: #FAFAFA;
     white-space: pre-line;
     padding: 20px;
+    width: auto;
+    p {
+      text-align: center;
+      max-width: 150px;
+    }
   }
   video {
     width: 100%;
   }
   h1, h2, h3, h4, h5, h6 {
     display: block;
-
+    margin-top: 2em;
+    font-weight: 500;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  hr {
+    background-color: rgba(250, 250, 250, 0.5);
+    padding: .5px;
   }
   nav {
     background-color: rgba(0,0,0,.9);
@@ -144,9 +173,58 @@
       padding: 0 7px;
       a {
         @include transition(.5s);
-        font-size: 24px;
+        font-size: 1em;
       }
     }
+  }
+  .center {
+    text-align: center;
+  }
+  .left {
+    text-align: left;
+  }
+  .right {
+    text-align: right;
+  }
+  .silent {
+    opacity: .5;
+  }
+  .typewriter {
+    > * {
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      border-right: .15em solid $theme_color; /* The typwriter cursor */
+      white-space: nowrap; /* Keeps the content on a single line */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      letter-spacing: .15em; /* Adjust as needed */
+      animation-delay: 5s;
+      -moz-animation-delay: 5s;
+      animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+      -webkit-animation-delay: 5s;
+    }
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: $theme_color; }
+  }
+  code.tag {
+      background-color: #efefef;
+      font-size: calc(100% - 5px);
+      color: $theme_color;
+      padding: 2.5px 4px;
+      border-radius: 4px;
+      margin: 0 1px;
+      vertical-align: middle;
+      word-wrap: break-word
   }
   /* -------------------------------
     # Page Template
@@ -192,7 +270,6 @@
      position: relative;
      padding-top: calc(62px + 5%);
      padding-bottom: 5%;
-     max-width: 1400px;
      &.full-width {
        max-width: 100%;
        padding: 0;
@@ -201,9 +278,15 @@
        background-color: #CCCCCC;
      }
      &.black-bg {
-       p {
+      max-width: 1100px;
+      p, * {
          color: #FAFAFA;
        }
+       h1{
+         width: 100%;
+         display: block
+       }
+       
      }
      .fixed-top-250 {
         position: fixed;
@@ -251,7 +334,6 @@
            i {
              line-height: 32px;
              color: rgba(255,255,255,.9);
-             font-size: 24px;
            }
          }
        }
@@ -293,7 +375,7 @@
                  background-color: rgba(0,0,0,.9);
                  .dropdown-header {
                    color: #999999;
-                   font-size: 12px;
+                   font-size: .75em;
                  }
                  .dropdown-item {
                    text-transform: unset;
@@ -359,7 +441,7 @@
          }
          label {
            font-weight: 500;
-           font-size: 12px;
+           font-size: .75em;
          }
          p {
            width: 100%;
@@ -385,13 +467,21 @@
   footer {
     background-color: #111;
     div {
-      p {
+      p, a {
         text-align: center;
         max-width: 1200px;
         color: #EAEAEA;
-        font-size: 12px;
-        padding: 15px;
+        font-size: .75em;
+        padding: 15px 0;
         margin: auto;
+      }
+      a {
+        padding-right: 14px;
+        font-size: 1em;
+        color: $theme_color;
+        &:last-child {
+          padding-right: 0;
+        }
       }
       /* Desktop */
       @media only screen and (min-width : 992px) {
@@ -414,22 +504,27 @@
   /* -------------------------------
     # SVG preloader animation
    -------------------------------*/
-   .loading .content path {
+      .loading .content path ,
+      .SVG-Logo path {
      opacity: 1;
      stroke: $primary_color;
      animation: raycillesvg 3s cubic-bezier(0,0.23,1,.1);
      animation-iteration-count: infinite;
    }
 
-   .loading .content #Layer_2 circle,
-   .loading .content #Layer_3 path {
+      .loading .content #Layer_2 circle,
+      .SVG-Logo #Layer_2 circle,
+      .loading .content #Layer_3 path ,
+      .SVG-Logo #Layer_3 path {
      stroke: $primary_color;
      transform-origin: center;
    }
-   .loading .content #Layer_2 circle {
+      .loading .content #Layer_2 circle ,
+      .SVG-Logo #Layer_2 circle {
      animation: circlesvg 5s linear;
    }
-   .loading .content #Layer_3 path {
+      .loading .content #Layer_3 path ,
+      .SVG-Logo #Layer_3 path {
      animation: circlesvg2 7s linear alternate;
    }
 
