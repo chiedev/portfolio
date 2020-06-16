@@ -4,7 +4,7 @@ import { BrowserModule, Title }  from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { TimelineComponent } from './timeline/timeline.component';
+import { AboutComponent } from './about/about.component';
 import { PlaygroundComponent } from './playground/playground.component';
 import { ScaleGeneratorComponent } from './scale-generator/scale-generator.component';
 import { MainFrameComponent } from './main-frame/main-frame.component';
@@ -14,7 +14,7 @@ import { ProjectsComponent } from './projects/projects.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'timeline', component: TimelineComponent },
+  { path: 'about', component: AboutComponent },
   { path: 'playground', component: PlaygroundComponent },
   { path: 'scale-generator', component: ScaleGeneratorComponent },
   { path: 'tabs-generator', component: TabsGeneratorComponent },
@@ -26,7 +26,7 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     HomeComponent,
-    TimelineComponent,
+    AboutComponent,
     PlaygroundComponent,
     ScaleGeneratorComponent,
     MainFrameComponent,

@@ -97,7 +97,7 @@
     width: auto;
     p {
       text-align: center;
-      max-width: 150px;
+      max-width: fit-content;
     }
   }
   video {
@@ -253,7 +253,7 @@
         left: 0;
         right: 0;
         height: min-content;
-        margin-bottom: 100px;
+        margin-left: -12px;
       }
    }
    .display-picture {

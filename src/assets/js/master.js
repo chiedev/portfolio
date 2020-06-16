@@ -2,14 +2,11 @@
 
 // Document Ready
 $(window).ready(function(){
-  loading('start');
-
+	
   // set all parallax
   $('.parallax').parallax();
 
-  // force to hide watermark
-  $('footer + div').css({'display':'none !important'});
-  $('footer + div').remove();
+  loading('start');
 
   if ( $(window).width() < 993 ) {
     // collapse navigation once clicked
