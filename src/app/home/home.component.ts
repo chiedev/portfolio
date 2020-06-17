@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title }     from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  // title = 'Portfolio | Raycille Dimla';
+  title = 'Portfolio | Raycille Dimla';
   // base = '/';
   // og_metas = `<meta property="fb:app_id" content="318138918776445" />
   // <meta property="og:site_name" content="Raycille Dimla"/>
@@ -17,8 +18,12 @@ export class HomeComponent implements OnInit {
   // <meta property="og:image:alt" content="Web Developer Portfolio">
   // <meta property="og:type" content="website"/>`;
 
-  constructor() { }
+  public constructor(private titleService: Title ) { }
 
+  public setTitle( newTitle: string) {
+    this.titleService.setTitle( newTitle );
+  }
+  
   ngOnInit() {
   }
 

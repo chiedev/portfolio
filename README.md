@@ -9,7 +9,7 @@ This is my latest web developer portfolio.
 > version 1.9.7
 - Active Skill Indicator
 - [About Me](https://chiedev.github.io/portfolio/about)
-- [WordPress Websites](https://chiedev.github.io/portfolio/projects) showcase (changed url)
+- [WordPress Websites](https://chiedev.github.io/portfolio/wordpress-projects) showcase (changed url)
 - Added more section on "Playground" submenu.
 
 > version 1.9.5

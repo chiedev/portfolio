@@ -1,0 +1,83 @@
+/**
+ * Portfolio Stylesheet
+ */
+q {
+    quotes: "“" "”" "‘" "’";
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    margin: 0;
+    color: #555555;
+    &::before {
+        content: open-quote;
+        font-size: 400%;
+        color: #cccccc;
+        font-family: initial;
+        vertical-align: middle;
+        line-height: .75em;
+        padding-right: 10px;
+    }
+    &::after {
+        content: close-quote;
+        font-size: 400%;
+        color: #cccccc;
+        font-family: initial;
+        vertical-align: middle;
+        line-height: .75em;
+        padding-left: 10px;
+    }
+    +q {
+        margin-top: 1em;
+    }
+}
+table {
+    margin: auto 1em;
+    tbody {
+        tr {
+            th {
+                color: $primary_color;
+            }
+        }
+    }
+}
+div.tags {
+    line-height: 3em;
+    margin: 2em 28px;
+    code.tag {
+        font-size: calc(100% - 5px);
+        padding: 2.5px 4px;
+        border-radius: 4px;
+        margin: 0 3px;
+        vertical-align: middle;
+        word-wrap: break-word;
+        font-size: .75em;
+    }
+}
+.portfolio-card {
+    background-color: rgba(0,0,0,.5);
+    color: #FAFAFA;
+    padding: 3em;
+    width: auto;
+    max-width: 400px;
+    margin: auto;
+    p {
+        margin: 2em auto 1em;
+        text-align: center;
+        max-width: fit-content;
+    }
+    .logo {
+        @include transition(.5s);
+        margin: auto;
+        .SVG-Logo {
+            @include transition(.5s);
+            width: 100%;
+            padding: 2em;
+            margin: auto;
+            &:hover {
+                @include transition(.5s);
+                width: 95%;
+                margin-bottom: 5%;
+            }
+        }
+    }
+}
