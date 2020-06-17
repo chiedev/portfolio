@@ -89,7 +89,7 @@
           transform: translateX(-50%, 1029.36px, 0);
     opacity: 1 !important;
   }
-  pre {
+  .card {
     background-color: rgba(0,0,0,.5);
     color: #FAFAFA;
     white-space: pre-line;
@@ -316,6 +316,27 @@
        border-radius: 3px;
      }
    }
+   code { 
+      border-radius: 10px;
+      &.tag {
+        background-color: #1F1F1F;
+        font-size: calc(100% - 5px);
+        padding: 2.5px 4px;
+        border-radius: 4px;
+        margin: 0 1px;
+        vertical-align: middle;
+        word-wrap: break-word;
+    }
+  }
+  div.tags {
+    line-height: 3em;
+    margin: 2em auto;
+    font-size: .75em;
+    text-transform: uppercase;
+    .tag {
+      font-size: 1em;
+    }
+  }
   /* -------------------------------
     # Main-header
    -------------------------------*/
@@ -498,12 +519,22 @@
       }
     }
   }
-   /* -------------------------------
-     # Misc
-    -------------------------------*/
+  /* -------------------------------
+    # Misc
+  -------------------------------*/
   /* -------------------------------
     # SVG preloader animation
-   -------------------------------*/
+  -------------------------------*/
+  .SVG-Logo {
+    @include transition(.5s);
+    margin: auto;
+    width: 250px;
+    :hover {
+      width: 240px;
+      padding: 5px;
+      @include transition(.5s);
+    }
+  }
       .loading .content path ,
       .SVG-Logo path {
      opacity: 1;

@@ -19,7 +19,8 @@ const appRoutes: Routes = [
   { path: 'scale-generator', component: ScaleGeneratorComponent },
   { path: 'tabs-generator', component: TabsGeneratorComponent },
   { path: 'chord-diagram-generator', component: ChordDiagramGeneratorComponent },
-  { path: 'projects', component: ProjectsComponent }
+  { path: 'projects', component: ProjectsComponent },
+  { path: '**', component: HomeComponent }
 ];
 
 @NgModule({
