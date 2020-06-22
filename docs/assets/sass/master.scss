@@ -364,6 +364,7 @@
       z-index: 1;
       filter: invert(80%);
       -webkit-filter: invert(80%);
+      overflow: hidden;
     }
     &:after {
       content: '';
@@ -375,6 +376,7 @@
       position: absolute;
       top: -100%;
       width: 300%;
+      overflow: hidden;
     }
   }
   /* -------------------------------

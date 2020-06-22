@@ -73,10 +73,19 @@ div.tags {
             width: 100%;
             padding: 2em;
             margin: auto;
-            &:hover {
-                @include transition(.5s);
-                width: 95%;
-                margin-bottom: 5%;
+            
+        }
+    }
+}
+@media screen only and (min-width: 991px) {
+    .portfolio-card {
+        .logo {
+            .SVG-Logo {
+                &:hover {
+                    @include transition(.5s);
+                    width: 95%;
+                    margin: auto auto 5% auto;
+                }
             }
         }
     }
