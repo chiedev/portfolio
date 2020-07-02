@@ -9,9 +9,9 @@
 
       <div class="navbar-collapse collapse" id="navbarPrimary">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" (click)="setTitle( 'Works' )" routerLink="/wordpress-projects" routerLinkActive="active">Works</a>
-          </li>
+          </li> -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Playground</a>
             <div class="dropdown-menu" aria-labelledby="menuDropdown">
@@ -28,9 +28,9 @@
           </li>
         </ul>
         <ul class="social-media">
-          <li><a href="https://www.linkedin.com/in/raycille-dimla/" target="__blank" title="linkedin"><i class="fab fa-linkedin"></i></a></li>
+          <!-- <li><a href="https://www.linkedin.com/in/raycille-dimla/" target="__blank" title="linkedin"><i class="fab fa-linkedin"></i></a></li> -->
           <li><a href="https://github.com/chiedev/" target="__blank" title="github"><i class="fab fa-github-square"></i></a></li>
-          <li><a href="https://codepen.io/chiedevdimla/" target="__blank" title="codepen"><i class="fab fa-codepen"></i></a></li>
+          <!-- <li><a href="https://codepen.io/chiedev/" target="__blank" title="codepen"><i class="fab fa-codepen"></i></a></li> -->
         </ul>
       </div>
     </div>
@@ -48,13 +48,20 @@
 <footer id="main-footer" class="container-fluid">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 col-md-5 left">
-        <p>Portfolio version 1.9.8 | All Rights Reserved. | 2020 © | Powered by Angular
+      <div class="col-sm-12 col-md-6 left">
+        <p>Portfolio version 1.9.9 | All Rights Reserved. | 2020 © | Powered by Angular and GitHub Pages.
           <br>
           <!-- Free website quotation? -->
-          You may send me a message at <a href="mailto:developer@chiedimla.com" target="__blank">developer@chiedimla.com</a></p>
+          You may send me a message at <a href="mailto:developer@chiedimla.com" target="__blank">developer@chiedimla.com</a> | 
+          <!-- More Links -->
+          <a (click)="setTitle( 'About Me' )" routerLink="/about" routerLinkActive="active">Certifications</a> | 
+          <a (click)="setTitle( 'Works' )" routerLink="/wordpress-projects" routerLinkActive="active">WordPress</a> | 
+          <a href="https://www.linkedin.com/in/raycille-dimla/" target="__blank" title="linkedin"><i class="fab fa-linkedin"></i></a>
+          <a href="https://codepen.io/chiedev/" target="__blank" title="codepen"><i class="fab fa-codepen"></i></a>
+          
+        </p>
       </div>
-      <div class="col-sm-12 col-md-7 right">
+      <div class="col-sm-12 col-md-6 right">
         <p>“Others inspire us, information feeds us, practice improves our performance, but we need quiet time to figure things out, to emerge with new discoveries, to unearth original answers.”
           ~ Ester Bucholz</p>
       </div>

@@ -161,7 +161,7 @@
       padding: 0 7px;
       a {
         @include transition(.5s);
-        font-size: 1em;
+        font-size: 1.75em;
       }
     }
   }
@@ -539,7 +539,9 @@
         margin: auto;
       }
       a {
-        padding-right: 14px;
+        i {
+          padding-right: 5px;
+        }
         font-size: 1em;
         color: $theme_color;
         &:last-child {
