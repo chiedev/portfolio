@@ -11,6 +11,7 @@ import { MainFrameComponent } from './main-frame/main-frame.component';
 import { TabsGeneratorComponent } from './tabs-generator/tabs-generator.component';
 import { ChordDiagramGeneratorComponent } from './chord-diagram-generator/chord-diagram-generator.component';
 import { WordpressProjectsComponent } from './wordpress-projects/wordpress-projects.component';
+import { ContactComponent } from './contact/contact.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,6 +21,8 @@ const appRoutes: Routes = [
   { path: 'tabs-generator', component: TabsGeneratorComponent },
   { path: 'chord-diagram-generator', component: ChordDiagramGeneratorComponent },
   { path: 'wordpress-projects', component: WordpressProjectsComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'timeline', component: AboutComponent },
   { path: '**', component: HomeComponent }
 ];
 
@@ -33,7 +36,8 @@ const appRoutes: Routes = [
     MainFrameComponent,
     TabsGeneratorComponent,
     ChordDiagramGeneratorComponent,
-    WordpressProjectsComponent
+    WordpressProjectsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

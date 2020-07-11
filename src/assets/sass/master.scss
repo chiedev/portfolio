@@ -1,47 +1,8 @@
-/*
- * Author: Raycille Dimla
- * Author URI: https://www.linkedin.com/in/raycille-dimla/
- *
- * Table Of Contents
- * # Import
- */
-
- /* -------------------------------
-   # Import
-  -------------------------------*/
-  @import "base/theme";
-  @import "utilities/font-awesome-4.7.0/css/font-awesome.min.css";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@import "base/theme";
+@import "utilities/font-awesome-4.7.0/css/font-awesome.min.css";
   /*
    * Author: Raycille Dimla
-   * Author URI: https://www.linkedin.com/in/raycille-dimla/
+   * Author URI: 
    *
    * Table Of Contents
    * # Fonts
@@ -534,7 +495,7 @@
       p, a {
         text-align: center;
         max-width: 1200px;
-        color: #EAEAEA;
+        color: rgba(234, 234, 234, 0.5);
         font-size: .75em;
         padding: 15px 0;
         margin: auto;
@@ -548,6 +509,13 @@
         color: $theme_color;
         &:last-child {
           padding-right: 0;
+        }
+      }
+      a:hover {
+        color: $translucent_white;
+        i {
+          padding-right: 5px;
+          color: $translucent_white;
         }
       }
       /* Desktop */

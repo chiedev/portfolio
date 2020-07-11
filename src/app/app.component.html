@@ -24,13 +24,14 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" (click)="setTitle( 'About Me' )" routerLink="/about" routerLinkActive="active">About Me</a>
+            <a class="nav-link" (click)="setTitle( 'About Me | Raycille Dimla' )" routerLink="/about" routerLinkActive="active">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="setTitle( 'Contact | Raycille Dimla' )" routerLink="/contact" routerLinkActive="active">Contact</a>
           </li>
         </ul>
         <ul class="social-media">
-          <!-- <li><a href="https://www.linkedin.com/in/raycille-dimla/" target="__blank" title="linkedin"><i class="fab fa-linkedin"></i></a></li> -->
           <li><a href="https://github.com/chiedev/" target="__blank" title="github"><i class="fab fa-github-square"></i></a></li>
-          <!-- <li><a href="https://codepen.io/chiedev/" target="__blank" title="codepen"><i class="fab fa-codepen"></i></a></li> -->
         </ul>
       </div>
     </div>
@@ -49,18 +50,18 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-6 left">
-        <p>2020 © All Rights Reserved. Powered by Angular and GitHub Pages.
+        <p><!-- More Links -->
+          <a (click)="setTitle( 'Contact | Raycille Dimla' )" routerLink="/contact" routerLinkActive="active">Contact</a> | 
+          <a (click)="setTitle( 'About Me | Raycille Dimla' )" routerLink="/about" routerLinkActive="active">Certifications</a> | 
+          <a (click)="setTitle( 'Works' )" routerLink="/wordpress-projects" routerLinkActive="active">WordPress</a> | 
+          <a href="https://omusiclab.com/" target="__blank" title="oMusic">oMusic Laboratory</a> |
+          <a href="https://www.linkedin.com/in/raycille-dimla/" target="__blank" title="linkedin"><i class="fab fa-linkedin"></i></a>
+          <!-- <a href="https://codepen.io/chiedev/" target="__blank" title="codepen"><i class="fab fa-codepen"></i></a> -->
           <br>
           <!-- Free website quotation? -->
           You may send me a message at <a href="mailto:developer@chiedimla.com" target="__blank">developer@chiedimla.com</a>
           <br>
-          <!-- More Links -->
-          <a (click)="setTitle( 'About Me' )" routerLink="/about" routerLinkActive="active">Certifications</a> | 
-          <a (click)="setTitle( 'Works' )" routerLink="/wordpress-projects" routerLinkActive="active">WordPress</a> | 
-          <a href="https://omusiclab.com/" target="__blank" title="oMusic">oMusic Laboratory</a> |
-          <a href="https://www.linkedin.com/in/raycille-dimla/" target="__blank" title="linkedin"><i class="fab fa-linkedin"></i></a>
-          <a href="https://codepen.io/chiedev/" target="__blank" title="codepen"><i class="fab fa-codepen"></i></a>
-          
+          Portfolio v.2.0.0 | 2020 © All Rights Reserved. Powered by Angular, GitHub Pages and WakaTime.
         </p>
       </div>
       <div class="col-sm-12 col-md-6 right">
