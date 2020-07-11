@@ -1,47 +1,8 @@
-/*
- * Author: Raycille Dimla
- * Author URI: https://www.linkedin.com/in/raycille-dimla/
- *
- * Table Of Contents
- * # Import
- */
-
- /* -------------------------------
-   # Import
-  -------------------------------*/
-  @import "base/theme";
-  @import "utilities/font-awesome-4.7.0/css/font-awesome.min.css";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@import "base/theme";
+@import "utilities/font-awesome-4.7.0/css/font-awesome.min.css";
   /*
    * Author: Raycille Dimla
-   * Author URI: https://www.linkedin.com/in/raycille-dimla/
+   * Author URI: 
    *
    * Table Of Contents
    * # Fonts
@@ -69,7 +30,7 @@
      # General
     -------------------------------*/
   body {
-      background-color: #000;
+      background-color: #0e1116;
       font-size: 0;
       // font-family: 'Varela Round', sans-serif;
       font-family: 'Nunito', sans-serif;
@@ -100,11 +61,12 @@
     font-size: 2em;
   }
   hr {
-    background-color: rgba(250, 250, 250, 0.5);
-    padding: .5px;
+    background-color: rgba(250, 250, 250, 0.1);
+    margin-top: -1em;
+    padding: 0 .5px .5px .5px;
   }
   nav {
-    background-color: rgba(0,0,0,.9);
+    background-color: rgba(14, 17, 22, .9);
   }
   a {
     color: #FAFAFA;
@@ -211,7 +173,7 @@
       margin-top: 60px;
       position: relative;
       height: 200px;
-      background-color: rgba(255,255,255,.5);
+      // background-color: rgba(0,0,0,.1);
       img {
         width: 100%;
       }
@@ -533,12 +495,13 @@
       p, a {
         text-align: center;
         max-width: 1200px;
-        color: #EAEAEA;
+        color: rgba(234, 234, 234, 0.5);
         font-size: .75em;
         padding: 15px 0;
         margin: auto;
       }
-      a {
+      a , 
+      a:visited {
         i {
           padding-right: 5px;
         }
@@ -546,6 +509,13 @@
         color: $theme_color;
         &:last-child {
           padding-right: 0;
+        }
+      }
+      a:hover {
+        color: $translucent_white;
+        i {
+          padding-right: 5px;
+          color: $translucent_white;
         }
       }
       /* Desktop */
