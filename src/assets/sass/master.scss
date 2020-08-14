@@ -211,6 +211,19 @@
           text-align: center;
         }
       }
+      &.center {
+        h1, p {
+          left: 0;
+          right: 0;
+          padding-left: 1em;
+          padding-right: 1em;
+          margin: 1em auto;
+        }
+        p {
+          top: 80px;
+          max-width: 500px;
+        }
+      }
    }
    .page {
      position: relative;
@@ -285,13 +298,13 @@
     display: table;
     width: 100%;
     height: auto;
-    max-width: 350px;
-    max-height: 350px;
-    min-width: 300px;
-    min-height: 300px;
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 100px;
+    min-height: 100px;
     padding: .75em;
     background-color: #000000;
-     img {
+    img {
       display: table-cell;
       border-radius: 100%;
       border: solid 5px $primary_color;
