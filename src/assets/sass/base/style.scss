@@ -189,14 +189,17 @@ div.tags {
     }
     .container {
         &.overlap {
-            margin-top: -100px;
+            margin-top: -165px;
             padding-top: 0;
             img {
                 width: 100%;
             }
         }
         &.dont-overlap {
-            margin-top: 100px;
+            margin-top: 165px;
+        }
+        &.overlap-half {
+            margin-top: -50px;
         }
         @media only screen and (max-width : 768px) {
             h1 {

@@ -289,23 +289,19 @@
   }
   .display-picture {
     position: relative;
+    display: grid;
     overflow: hidden;
     border: solid 5px #75E8FF;
     border-radius: 100%;
     margin: auto;
     margin-top: 3em;
     margin-bottom: 3em;
-    display: table;
-    width: 100%;
-    height: auto;
-    max-width: 200px;
-    max-height: 200px;
-    min-width: 100px;
-    min-height: 100px;
+    width: 220px;
+    height: 220px;
     padding: .75em;
     background-color: #000000;
     img {
-      display: table-cell;
+      display: inline-grid;
       border-radius: 100%;
       border: solid 5px $primary_color;
       width: 100%;
@@ -318,11 +314,11 @@
       content: '';
       animation: grain 10s steps(2) infinite;
       background-image: url("../images/film-grain.png");
-      opacity: .5;
+      opacity: .7;
       height: 200%;
-      left: -25%;
+      left: -50%;
       position: absolute;
-      top: -50%;
+      top: -35%;
       width: 200%;
       z-index: 1;
       filter: invert(80%);
@@ -340,6 +336,12 @@
       top: -100%;
       width: 300%;
       overflow: hidden;
+    }
+    &.overlap {
+      margin-top: -165px;
+      @media only screen and (max-width : 768px) {
+        margin-top: -65px;
+      }
     }
   }
   /* -------------------------------
