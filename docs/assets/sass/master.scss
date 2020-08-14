@@ -211,6 +211,19 @@
           text-align: center;
         }
       }
+      &.center {
+        h1, p {
+          left: 0;
+          right: 0;
+          padding-left: 1em;
+          padding-right: 1em;
+          margin: 1em auto;
+        }
+        p {
+          top: 80px;
+          max-width: 500px;
+        }
+      }
    }
    .page {
      position: relative;
@@ -232,7 +245,10 @@
          width: 100%;
          display: block
        }
-       
+       pre {
+        white-space: pre-wrap; 
+        color: #fafafa;
+       }
      }
      .fixed-top-250 {
         position: fixed;
@@ -257,7 +273,7 @@
        @include link-color('hover', darken($primary_color,40));
      }
      .black-container {
-       background-color: rgba(0,0,0,.8);
+       background-color: rgba(22, 26, 34, 0.733);
        padding: 5%;
        border-radius: 3px;
      }
@@ -276,23 +292,19 @@
   }
   .display-picture {
     position: relative;
+    display: grid;
     overflow: hidden;
     border: solid 5px #75E8FF;
     border-radius: 100%;
     margin: auto;
     margin-top: 3em;
     margin-bottom: 3em;
-    display: table;
-    width: 100%;
-    height: auto;
-    max-width: 350px;
-    max-height: 350px;
-    min-width: 300px;
-    min-height: 300px;
+    width: 220px;
+    height: 220px;
     padding: .75em;
     background-color: #000000;
-     img {
-      display: table-cell;
+    img {
+      display: inline-grid;
       border-radius: 100%;
       border: solid 5px $primary_color;
       width: 100%;
@@ -305,11 +317,11 @@
       content: '';
       animation: grain 10s steps(2) infinite;
       background-image: url("../images/film-grain.png");
-      opacity: .5;
+      opacity: .7;
       height: 200%;
-      left: -25%;
+      left: -50%;
       position: absolute;
-      top: -50%;
+      top: -35%;
       width: 200%;
       z-index: 1;
       filter: invert(80%);
@@ -327,6 +339,12 @@
       top: -100%;
       width: 300%;
       overflow: hidden;
+    }
+    &.overlap {
+      margin-top: -165px;
+      @media only screen and (max-width : 768px) {
+        margin-top: -65px;
+      }
     }
   }
   /* -------------------------------
