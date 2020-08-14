@@ -245,7 +245,10 @@
          width: 100%;
          display: block
        }
-       
+       pre {
+        white-space: pre-wrap; 
+        color: #fafafa;
+       }
      }
      .fixed-top-250 {
         position: fixed;
@@ -270,7 +273,7 @@
        @include link-color('hover', darken($primary_color,40));
      }
      .black-container {
-       background-color: rgba(0,0,0,.8);
+       background-color: rgba(22, 26, 34, 0.733);
        padding: 5%;
        border-radius: 3px;
      }
