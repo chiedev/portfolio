@@ -229,6 +229,9 @@
      position: relative;
      padding-top: calc(62px + 3em);
      padding-bottom: 3em;
+     &.clearfix {
+       padding: 0;
+     }
      &.full-width {
        max-width: 100%;
        padding: 0;
@@ -290,23 +293,41 @@
         word-wrap: break-word;
     }
   }
+  .display-picture-border {
+    font-size: 0; 
+    width: 190px; 
+    height: 190px; 
+    margin: auto; 
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    z-index: 1;
+    &.center {
+      top: -185px; 
+    }
+    &.left {
+      top: 27px;
+    }
+    @media only screen and (max-width : 768px) {
+      &.center {
+        top: -85px; 
+      }
+    }
+  }
   .display-picture {
     position: relative;
     display: grid;
     overflow: hidden;
-    border: solid 5px #75E8FF;
     border-radius: 100%;
     margin: auto;
     margin-top: 3em;
     margin-bottom: 3em;
-    width: 220px;
-    height: 220px;
-    padding: .75em;
+    width: 150px;
+    height: 150px;
     background-color: #000000;
     img {
       display: inline-grid;
       border-radius: 100%;
-      border: solid 5px $primary_color;
       width: 100%;
       height: 100%;
       opacity: .7;
@@ -317,7 +338,7 @@
       content: '';
       animation: grain 10s steps(2) infinite;
       background-image: url("../images/film-grain.png");
-      opacity: .7;
+      opacity: .5;
       height: 200%;
       left: -50%;
       position: absolute;
@@ -332,7 +353,7 @@
       content: '';
       animation: grain 8s steps(10) infinite;
       background-image: url("../images/film-grain.gif");
-      opacity: .2;
+      opacity: .1;
       height: 300%;
       left: -50%;
       position: absolute;

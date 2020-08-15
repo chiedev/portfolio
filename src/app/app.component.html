@@ -2,26 +2,23 @@
 <header id="main-header">
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand" (click)="setTitle( 'Portfolio | Raycille Dimla' )" routerLink="/" routerLinkActive="active" title="Raycille Dimla">Raycille Dimla</a>
+      <a class="navbar-brand" (click)="setTitle( 'Portfolio | Raycille Dimla' )" routerLink="/" routerLinkActive="active" title="Raycille Dimla">&lt; Chie &gt;</a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarPrimary" aria-controls="navbarPrimary" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"><i class="fas fa-ellipsis-v"></i></span>
       </button>
 
       <div class="navbar-collapse collapse" id="navbarPrimary">
         <ul class="navbar-nav mr-auto">
-          <!-- <li class="nav-item">
-            <a class="nav-link" (click)="setTitle( 'Works' )" routerLink="/wordpress-projects" routerLinkActive="active">Works</a>
-          </li> -->
           <li class="nav-item">
-            <a class="nav-link" (click)="setTitle( 'About Me | Raycille Dimla' )" routerLink="/about" routerLinkActive="active">About Me</a>
+            <a class="nav-link" (click)="setTitle( 'About | Raycille Dimla' )" routerLink="/about" routerLinkActive="active">About Me</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Playground</a>
             <div class="dropdown-menu" aria-labelledby="menuDropdown">
               <span class="dropdown-header">Prototypes</span>
-              <a class="dropdown-item" (click)="setTitle( 'Scale Generator' )" routerLink="/scale-generator" routerLinkActive="active">Scale Generator</a>
-              <a class="dropdown-item" (click)="setTitle( 'Tabs Generator' )" routerLink="/tabs-generator" routerLinkActive="active">Tabs Generator</a>
-              <a class="dropdown-item" (click)="setTitle( 'Chord Diagram Generator' )" routerLink="/chord-diagram-generator" routerLinkActive="active">Chord Diagram Generator</a>
+              <a class="dropdown-item" (click)="setTitle( 'Scale Generator | Prototype' )" routerLink="/scale-generator" routerLinkActive="active">Scale Generator</a>
+              <a class="dropdown-item" (click)="setTitle( 'Tabs Generator | Prototype' )" routerLink="/tabs-generator" routerLinkActive="active">Tabs Generator</a>
+              <a class="dropdown-item" (click)="setTitle( 'Chord Diagram Generator | Prototype' )" routerLink="/chord-diagram-generator" routerLinkActive="active">Chord Diagram Generator</a>
               <span class="dropdown-header">More</span>
               <a class="dropdown-item" href="https://chiedev.github.io/javascript-beginners/" target="__blank">JavaScript for Beginners Guide</a>
             </div>
@@ -42,25 +39,20 @@
 </header>
 
 <div id="main-content">
-  <!-- <div class="loading">
-    <div class="content"></div>
-  </div> -->
-
   <router-outlet></router-outlet>
 </div><!-- end of #main-content -->
 
 <footer id="main-footer" class="container-fluid">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 col-md-6 left">
-        <p><!-- More Links -->
-          Portfolio v.2.0.3 | 2020 © All Rights Reserved. 
-          <!-- Free website quotation? -->
+      <div class="col-sm-12 col-md-5 left">
+        <p>
+          Portfolio v.2.0.4 | 2020 © All Rights Reserved. 
           <br>You may send me a message at <a href="mailto:developer@chiedimla.com" target="__blank">developer@chiedimla.com</a>
           <br>
           <a (click)="setTitle( 'Contact | Raycille Dimla' )" routerLink="/contact" routerLinkActive="active">Contact</a> | 
-          <a (click)="setTitle( 'About Me | Raycille Dimla' )" routerLink="/about" routerLinkActive="active">Certifications</a> | 
-          <a (click)="setTitle( 'Works' )" routerLink="/wordpress-projects" routerLinkActive="active">WordPress</a> | 
+          <a (click)="setTitle( 'About | Raycille Dimla' )" routerLink="/about" routerLinkActive="active">Certifications</a> | 
+          <a (click)="setTitle( 'WordPress Developer | Raycille Dimla' )" routerLink="/wordpress-projects" routerLinkActive="active">WordPress</a> | 
           <a href="https://tabs.omusiclab.com/" target="__blank" title="oMusic">oMusic Laboratory</a> |
           <a href="https://www.linkedin.com/in/raycille-dimla/" target="__blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
           <a href="https://github.com/chiedev/" target="__blank" target="__blank" title="GitHub"><i class="fab fa-github-square"></i></a>
@@ -69,11 +61,10 @@
           <br>
         </p>
       </div>
-      <div class="col-sm-12 col-md-6 right">
+      <div class="col-sm-12 col-md-7 right">
         <p>“Others inspire us, information feeds us, practice improves our performance, but we need quiet time to figure things out, to emerge with new discoveries, to unearth original answers.”
           ~ Ester Bucholz
-        <br>
-        Powered by <a href="https://angular.io/" target="__blank">Angular</a>, <a href="https://pages.github.com/" target="__blank">GitHub Pages</a>, <a href="https://wakatime.com/" target="__blank">WakaTime</a>, and <a href="https://www.powr.io/" target="__blank">POWr</a>.</p>
+        <br>Powered by <a href="https://angular.io/" target="__blank">Angular</a>, <a href="https://pages.github.com/" target="__blank">GitHub Pages</a>, <a href="https://wakatime.com/" target="__blank">WakaTime</a>, and <a href="https://www.powr.io/" target="__blank">POWr</a>.</p>
       </div>
     </div>
   </div>
