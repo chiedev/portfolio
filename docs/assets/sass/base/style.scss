@@ -170,19 +170,23 @@ div.tags {
             /* Remove default bullets */
             li {
                 &::before {
-                    content: "\2022";
-                    font-weight: bold;
-                    display: inline-block;
-                    width: 1em;
+                    content: "";
                     margin-left: -1em;
                     font-size: 1.5em;
                     line-height: 1.5em;
                 }
-                    &.active::before {
-                        color: #14ee43;
+                &.active::before, 
+                &.silent::before {
+                    content: "\2022";
+                    font-weight: bold;
+                    display: inline-block;
+                    width: 1em;
                 }
-                    &.silent::before {
-                        color: rgba(255,255,255,.7);
+                &.active::before {
+                    color: #14ee43;
+                }
+                &.silent::before {
+                    color: rgba(255,255,255,.7);
                 }
             }
         }
